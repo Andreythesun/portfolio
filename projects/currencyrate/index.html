@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+          <div class="container">
+                <div class="header">
+                      <h1>Currency Converter</h1>
+                </div>
+                <div class="date">updated on December 3rd</div>
+                <!--<ul class="currencies"></ul>-->
+                <article class="upText">
+                    <div class="up">From</div>
+                    <div class="up">To</div>
+                </article>
+                <article class="currChoise">
+                    <div class="selectors">
+                        <select class="sel" id="from" onchange="SelectFrom()" autocomplete="off">
+                            <option value="USD">USD</option>
+                            <option value="TRY" selected>TRY</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                        <select class="sel" id="to" onchange="SelectTo()" autocomplete="off">
+                            <option value="USD">USD</option>
+                            <option value="TRY">TRY</option>
+                            <option value="RUB" selected>RUB</option>
+                        </select>
+                    </div>
+                    <input type="number" class="num" placeholder="How much to convert?">
+                </article>
+                <div class="answer">
+                    _
+                </div>
+                <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Convert</button>
+                <!--<ul class="add-currency-list"></ul>-->
+          </div>
+        
+        <script src="script.js"></script>
+    </body>
+    
+</html>
